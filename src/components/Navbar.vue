@@ -1,18 +1,21 @@
 <template>
-  <header class="py-6">
+  <!-- Navigation bar -->
+  <header class="py-10">
     <div
       v-show="!mobile"
-      class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-2 w-full"
+      class="container flex justify-between items-center mx-auto w-11/12"
     >
-      <a href="" class="text-xl">Gary Tsai</a>
+      <a href="" class="text-xl text-red">Gary Tsai</a>
       <div class="hidden md:flex space-x-12 items-center text-base">
-        <router-link class="" :to="{ name: 'home' }"> Home.</router-link>
-        <router-link class="router" :to="{ name: 'work' }">Work.</router-link>
-        <router-link class="router" :to="{ name: 'about' }">About.</router-link>
-        <router-link class="text-black" :to="{ name: 'contact' }"
+        <router-link class="" :to="{ name: 'home' }">Home </router-link>
+        <router-link class="" :to="{ name: 'work' }">Work.</router-link>
+        <router-link class="" :to="{ name: 'about' }">About.</router-link>
+        <router-link class="" :to="{ name: 'contact' }"
           >Contact me.</router-link
         >
       </div>
+
+      <!-- Mobile menu button -->
       <div @click="openMenu = !openMenu" class="md:hidden flex justify-between">
         <button class="outline-none mobile-menu-button">
           <svg
@@ -30,14 +33,14 @@
         </button>
       </div>
     </div>
-
-    <ul v-if="openMenu" class="md:hidden flex flex-col px-8 h-screen">
+    <!-- Mobile menu -->
+    <ul
+      v-if="openMenu"
+      class="md:hidden flex flex-col h-screen mx-auto w-11/12"
+    >
       <transition>
         <div class="" @click="openMenu = !openMenu">
-          <router-link
-            class="block py-4 border-b-4 hover:bg-gray-100 focus:outline-none focus:bg-gray-100"
-            :to="{ name: 'home' }"
-          >
+          <router-link class="block py-4 border-b-4" :to="{ name: 'home' }">
             Home.</router-link
           >
           <router-link class="block py-4 border-b-4" :to="{ name: 'work' }"

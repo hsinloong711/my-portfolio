@@ -1,13 +1,23 @@
 <template>
   <!-- Navigation bar -->
-  <header class="py-10">
+  <header class="py-10 md:py-5">
     <div
       v-show="!mobile"
       class="container flex justify-between items-center mx-auto w-11/12"
     >
-      <a href="" class="text-xl text-red">Gary Tsai</a>
+      <div>
+        <router-link class="text-xs" :to="{ name: 'home' }">
+          <img
+            class="w-10 md:w-12 lg:w-20"
+            src="src/assets/wood1.png"
+            alt="Sun icon"
+          />
+        </router-link>
+      </div>
+      <!-- <a href="" class="text-xl text-red">Gary Tsai</a> -->
+
       <div class="hidden md:flex space-x-12 items-center text-base">
-        <router-link class="" :to="{ name: 'home' }">Home </router-link>
+        <router-link class="" :to="{ name: 'home' }">Home. </router-link>
         <router-link class="" :to="{ name: 'work' }">Work.</router-link>
         <router-link class="" :to="{ name: 'about' }">About.</router-link>
         <router-link class="" :to="{ name: 'contact' }"
@@ -71,11 +81,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
-* {
-  font-family: "Fredoka One", cursive;
-}
-
 .slide-enter-active,
 .slide-leave-active {
   transition: opacity 1s, transform 1s;

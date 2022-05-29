@@ -6,74 +6,111 @@
   >
     <img
       v-if="sunny"
-      class="w-5 md:w-10"
+      class="w-8 md:w-8 lg:w-10"
       src="src/assets/sunny.png"
       width="40"
       alt="Sun icon"
     />
     <img
       v-else
-      class="w-5 md:w-10"
+      class="w-8 md:w-8 lg:w-10"
       src="src/assets/snowflake.png"
       width="40"
       alt="Snow icon"
     />
   </div>
 
-  <!-- Left -->
+  <!-- Container -->
   <div class="container flex justify-between items-start mx-auto w-11/12">
-    <div class="w-11/12 md:space-y-10">
-      <!-- Modify here margin problem -->
-      <h3
-        class="hello-button w-fit md:py-3 md:px-5 py-1 px-2 rounded-lg 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm text-black"
-      >
-        👋 Hello ,
+    <!-- Left -->
+    <div class="w-11/12 md:space-y-10 space-y-5">
+      <h3 class="w-fit 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm">
+        Hello,
       </h3>
       <h1
-        class="3xl:text-8xl 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-bold leading-tight text-black"
+        class="3xl:text-8xl 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-bold leading-tight"
       >
         I am Gary Tsai <br />
-        A Self-taught <br />Developer
+        A Self-taught <br />Developer.
       </h1>
-
-      <!-- <div class="flex flex-wrap max-w-xs justify-between items-start"> -->
+      <!-- Icons -->
       <div
-        class="grid grid-cols-3 lg:grid-cols-5 md:grid-cols-3 mt-5 gap-5 w-fit md:py-3 md:px-5 py-1 px-2 rounded-lg text-black bg-snow1"
+        class="grid grid-cols-3 lg:grid-cols-6 md:grid-cols-3 mt-5 gap-5 w-fit md:py-3 md:px-5 py-1 px-2 rounded-lg bg-snow1"
       >
         <div
           @click="handleHtml = !handleHtml"
           class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
         >
-          <img v-if="handleHtml" src="src/assets/html.png" alt="" />
-          <img v-else src="src/assets/html.gif" alt="" />
+          <img
+            v-if="!handleHtml"
+            src="src/assets/html.png"
+            alt="HTML icon"
+            title="HTML"
+          />
+          <img v-else src="src/assets/html.gif" alt="HTML icon" title="HTML" />
         </div>
 
         <div
           @click="handleCss = !handleCss"
           class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
         >
-          <img v-if="handleCss" src="src/assets/css.png" alt="" />
-          <img v-else src="src/assets/css.png" alt="" class="animate-pulse" />
+          <img
+            v-if="handleCss"
+            src="src/assets/css.png"
+            alt="CSS icon"
+            title="CSS"
+          />
+          <img
+            v-else
+            src="src/assets/css.png"
+            alt="CSS icon"
+            class="animate-pulse"
+            title="CSS"
+          />
         </div>
 
         <div
           @click="handleJs = !handleJs"
           class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
         >
-          <img v-if="handleJs" src="src/assets/js.png" alt="" />
-          <img v-else src="src/assets/js.gif" alt="" />
+          <img
+            v-if="handleJs"
+            src="src/assets/js.png"
+            alt="Javascript icon"
+            title="Javascript"
+          />
+          <img
+            v-else
+            src="src/assets/js.gif"
+            alt="Javascript icon"
+            title="Javascript"
+          />
         </div>
 
         <div
           @click="handleRn = !handleRn"
           class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
         >
-          <img v-if="handleRn" src="src/assets/react-native.png" alt="" />
-          <img v-else src="src/assets/react-native.gif" alt="" />
+          <img
+            v-if="handleRn"
+            src="src/assets/react-native.png"
+            alt="React Native icon"
+            title="React Native"
+          />
+          <img
+            v-else
+            src="src/assets/react-native.gif"
+            alt="React Native icon"
+            title="React Native"
+          />
         </div>
 
-        <div class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20 animate-bounce">
-          <img src="src/assets/vue.png" alt="" />
+        <div class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20">
+          <img src="src/assets/vue.png" alt="Vue icon" title="Vue icon" />
+        </div>
+
+        <div class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20">
+          <img src="src/assets/vue.png" alt="Vue icon" title="Vue icon" />
         </div>
       </div>
     </div>
@@ -86,22 +123,29 @@
         alt="user image"
       />
     </div>
+  </div>
 
-    <!-- Snowy -->
-    <div v-if="!sunny" class="snowflakes" aria-hidden="true">
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❄</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❄</div>
-      <div class="snowflake">❅</div>
-      <div class="snowflake">❆</div>
-      <div class="snowflake">❄</div>
-    </div>
+  <!-- Snowy -->
+  <div
+    v-if="!sunny"
+    class="snowflakes md:text-2xl lg:text-4xl"
+    aria-hidden="true"
+  >
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+  </div>
 
-    <!-- Wavy -->
+  <!-- Wavy -->
+
+  <div class="absolute inset-x-0 bottom-0 md:none">
     <div class="custom-shape-divider-bottom-1653339622">
       <svg
         data-name="Layer 1"
@@ -138,7 +182,7 @@ export default {
 /* customizable snowflake styling */
 .snowflake {
   color: #ecfeff;
-  font-size: 7em;
+  font-size: 2em;
   /* text-shadow: 0 0 1px #000; */
 }
 

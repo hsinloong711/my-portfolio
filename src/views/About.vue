@@ -21,7 +21,7 @@
       <!-- Right -->
       <div class="w-12/12 flexspace-y-3 md:space-y-5">
         <h3
-          class="w-fit 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm text-blue py-2 mt-2 md:mt-0"
+          class="w-fit 3xl:text-3xl 2xl:text-xl text-base text-blue py-2 mt-2 md:mt-0"
         >
           Self-introduction
         </h3>
@@ -30,9 +30,7 @@
         <div
           class="grid w-fit mt-0 md:mt-5 lg:mt-5 md:py-3 md:px-5 py-1 px-2 rounded-lg bg-snow1"
         >
-          <p
-            class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm"
-          >
+          <p class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base">
             I am Gary Tsai from Kuala Lumpur, Malaysia. I am an ex-hairstylist,
             trying to switch career in tech. I have been studying programming
             since July 2021, starting with C language as a side interest.
@@ -49,7 +47,7 @@
         </div>
 
         <h3
-          class="w-fit lg:block md:block 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm text-blue py-2 mt-2 md:mt-0"
+          class="w-fit lg:block md:block 3xl:text-3xl 2xl:text-xl text-base text-blue py-2 mt-2 md:mt-0"
         >
           Fun facts about me
         </h3>
@@ -60,7 +58,7 @@
               <img src="/src/assets/code.png" alt="" />
             </div>
             <p
-              class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-6"
+              class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base flex items-center pl-3 md:pl-5 lg:pl-6"
             >
               I practise coding everyday.
             </p>
@@ -72,7 +70,7 @@
               <img src="/src/assets/keyboard.png" alt="" />
             </div>
             <p
-              class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-6"
+              class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base flex items-center pl-3 md:pl-5 lg:pl-6"
             >
               I can type up to 183 words per minute.
             </p>
@@ -85,7 +83,7 @@
               <img src="/src/assets/exercise.png" alt="" />
             </div>
             <p
-              class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-6"
+              class="word w-fit lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base flex items-center pl-3 md:pl-5 lg:pl-6"
             >
               I exercise 5 times a week.
             </p>

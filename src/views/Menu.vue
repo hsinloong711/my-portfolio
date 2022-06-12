@@ -2,22 +2,57 @@
   <!-- Mobile menu -->
   <transition appear @before-enter="beforeEnter" @enter="enter">
     <div
-      class="container md:flex md:justify-between h-screen items-start mx-auto w-11/12"
+      class="container md:flex md:justify-between h-screen items-start mx-auto w-12/12"
     >
       <div class="md:hidden flex flex-col mx-auto w-11/12 overflow-x-hidden">
         <div class="" @click="openMenu = !openMenu">
-          <router-link class="block py-4 border-b-4" :to="{ name: 'home' }">
-            Home.</router-link
-          >
-          <router-link class="block py-4 border-b-4" :to="{ name: 'work' }"
-            >Work.</router-link
-          >
-          <router-link class="block py-4 border-b-4" :to="{ name: 'about' }"
-            >About.</router-link
-          >
-          <router-link class="block py-4 border-b-4" :to="{ name: 'contact' }"
-            >Contact me.</router-link
-          >
+          <div class="flex pt-2 border-b-4 py-4">
+            <div class="w-5 h-5 flex">
+              <img class="" src="/src/assets/home.png" alt="Home icon" />
+
+              <router-link
+                class="w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3 block"
+                :to="{ name: 'home' }"
+                >Home
+              </router-link>
+            </div>
+          </div>
+
+          <div class="flex pt-2 border-b-4 py-4">
+            <div class="w-5 h-5">
+              <img src="/src/assets/work.png" alt="Work icon" />
+            </div>
+
+            <router-link
+              class="w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3 block"
+              :to="{ name: 'work' }"
+              >Work</router-link
+            >
+          </div>
+
+          <div class="flex pt-2 border-b-4 py-4">
+            <div class="w-5 h-5">
+              <img src="/src/assets/person.png" alt="Person icon" />
+            </div>
+
+            <router-link
+              class="w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3 block"
+              :to="{ name: 'about' }"
+              >About
+            </router-link>
+          </div>
+
+          <div class="flex pt-2 border-b-4 py-4">
+            <div class="w-5 h-5">
+              <img src="/src/assets/phone.png" alt="Phone icon" />
+            </div>
+
+            <router-link
+              class="w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3 block"
+              :to="{ name: 'contact' }"
+              >Contact me</router-link
+            >
+          </div>
         </div>
       </div>
       <!-- Footer -->

@@ -15,9 +15,7 @@
     <div
       class="container flex justify-between md:justify-center items-center mx-auto w-11/12"
     >
-      <h3
-        class="w-fit 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm text-black"
-      >
+      <h3 class="w-fit 3xl:text-3xl 2xl:text-xl text-base text-black">
         My Projects
       </h3>
     </div>
@@ -38,7 +36,7 @@
             >
               <img src="/src/assets/vue.png" alt="Vue icon" />
             </div>
-            <p class="pt-1 ml-2 lg:text-base md:text-md text-sm">Dragonate</p>
+            <p class="pt-1 ml-2 lg:text-base text-base">Dragonate</p>
           </div>
         </div>
 
@@ -52,7 +50,7 @@
         <!-- Content -->
         <div class="px-3 pb-2">
           <div class="pt-2">
-            <p class="lg:text-base md:text-md text-sm">What I learnt</p>
+            <p class="text-base">What I learnt</p>
           </div>
           <div class="pt-1">
             <div class="mb-2 text-sm">
@@ -61,7 +59,7 @@
                   <img src="/src/assets/correct.png" alt="" />
                 </div>
                 <p
-                  class="word w-fit lg:max-w-xl lg:text-base md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-3"
+                  class="word w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3"
                 >
                   Rest API
                 </p>
@@ -71,7 +69,7 @@
                   <img src="/src/assets/correct.png" alt="" />
                 </div>
                 <p
-                  class="word w-fit lg:max-w-xl lg:text-base md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-3"
+                  class="word w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3"
                 >
                   Firebase
                 </p>
@@ -81,7 +79,7 @@
                   <img src="/src/assets/correct.png" alt="" />
                 </div>
                 <p
-                  class="word w-fit lg:max-w-xl lg:text-base md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-3"
+                  class="word w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3"
                 >
                   Passing data between screens
                 </p>
@@ -91,7 +89,7 @@
                   <img src="/src/assets/correct.png" alt="" />
                 </div>
                 <p
-                  class="word w-fit lg:max-w-xl lg:text-base md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-3"
+                  class="word w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3"
                 >
                   The importance of responsive design
                 </p>
@@ -112,14 +110,14 @@
           </div>
 
           <div class="pt-2">
-            <p class="lg:text-base md:text-md text-sm">Room for improvement</p>
+            <p class="text-base">Room for improvement</p>
 
             <div class="flex pt-2">
               <div class="w-5 h-5">
                 <img src="/src/assets/sad.png" alt="" />
               </div>
               <p
-                class="word w-fit lg:max-w-xl lg:text-base md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-3"
+                class="word w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3"
               >
                 Designed for desktop screens ONLY
               </p>
@@ -130,7 +128,7 @@
                 <img src="/src/assets/sad.png" alt="" />
               </div>
               <p
-                class="word w-fit lg:max-w-xl lg:text-base md:text-md text-sm flex items-center pl-3 md:pl-5 lg:pl-3"
+                class="word w-fit lg:max-w-xl text-base flex items-center pl-3 md:pl-5 lg:pl-3"
               >
                 No upload image and google map autocomplete function
               </p>

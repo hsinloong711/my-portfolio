@@ -17,12 +17,10 @@
       <!-- <a href="" class="text-xl text-red">Gary Tsai</a> -->
 
       <div class="hidden md:flex space-x-12 items-center text-base">
-        <router-link class="" :to="{ name: 'home' }">Home. </router-link>
-        <router-link class="" :to="{ name: 'work' }">Work.</router-link>
-        <router-link class="" :to="{ name: 'about' }">About.</router-link>
-        <router-link class="" :to="{ name: 'contact' }"
-          >Contact me.</router-link
-        >
+        <router-link class="" :to="{ name: 'home' }">Home </router-link>
+        <router-link class="" :to="{ name: 'work' }">Work</router-link>
+        <router-link class="" :to="{ name: 'about' }">About</router-link>
+        <router-link class="" :to="{ name: 'contact' }">Contact me</router-link>
       </div>
 
       <!-- Mobile menu button -->

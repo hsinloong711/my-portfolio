@@ -11,26 +11,21 @@
     >
       <!-- Left -->
       <div class="w-12/12 md:w-11/12 md:space-y-10 space-y-5">
-        <h3
-          class="w-fit 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm"
-        >
-          Message me
-        </h3>
-
+        <h3 class="w-fit 3xl:text-3xl 2xl:text-xl text-base">Message me</h3>
         <form
           action="https://formsubmit.co/2073c46851e96bd5a19f2b3de5efce90"
           method="POST"
           class=""
         >
           <input
-            class="word flex w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm md:py-3 md:px-5 py-3 px-2 rounded-lg bg-snow1 mb-5 md:mb-10"
+            class="word flex w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base md:py-3 md:px-5 py-3 px-2 rounded-lg bg-snow1 mb-5 md:mb-10"
             type="text"
             placeholder="Name"
             autocomplete="none"
             required
           />
           <input
-            class="word flex w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm md:py-3 md:px-5 py-3 px-2 rounded-lg bg-snow1 mb-5 md:mb-10"
+            class="word flex w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base md:py-3 md:px-5 py-3 px-2 rounded-lg bg-snow1 mb-5 md:mb-10"
             type="email"
             name="email"
             placeholder="E-mail Address"
@@ -39,7 +34,7 @@
           />
 
           <textarea
-            class="word flex w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm md:pb-20 md:px-5 py-3 px-2 rounded-lg bg-snow1 mb-5 md:mb-10 scrollbar resize-none"
+            class="word flex w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base md:pb-20 md:px-5 py-3 px-2 rounded-lg bg-snow1 mb-5 md:mb-10 scrollbar resize-none"
             placeholder="Description"
             rows="5"
             cols="10"
@@ -49,7 +44,7 @@
 
           <button
             type="submit"
-            class="word flex justify-center w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl lg:text-md md:text-md text-sm md:py-3 md:px-5 py-3 px-2 rounded-lg bg-snow1 hover:text-green focus:outline-none focus:ring focus:ring-snow1"
+            class="word flex justify-center w-full lg:max-w-xl 3xl:text-3xl 2xl:text-xl text-base md:py-3 md:px-5 py-3 px-2 rounded-lg bg-snow1 hover:text-green focus:outline-none focus:ring focus:ring-snow1"
           >
             Send
           </button>
@@ -87,9 +82,7 @@
   <div
     class="hidden md:flex w-12/12 justify-center items-center fixed inset-x-1 bottom-1 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm"
   >
-    <footer class="lg:text-base md:text-md text-sm text-grey">
-      &copy; Gary Tsai 2022
-    </footer>
+    <footer class="text-base text-grey">&copy; Gary Tsai 2022</footer>
   </div>
 </template>
 

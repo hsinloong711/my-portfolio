@@ -6,11 +6,11 @@
       class="container flex justify-between items-center mx-auto w-11/12"
     >
       <div>
-        <router-link class="text-xs" :to="{ name: 'home' }">
+        <router-link class="" :to="{ name: 'home' }">
           <img
             class="w-10 md:w-12 lg:w-20"
-            src="src/assets/wood1.png"
-            alt="Sun icon"
+            src="/src/assets/wood1.png"
+            alt="Logo icon"
           />
         </router-link>
       </div>
@@ -26,7 +26,7 @@
       </div>
 
       <!-- Mobile menu button -->
-      <div @click="openMenu = !openMenu" class="md:hidden flex justify-between">
+      <router-link class="md:hidden" :to="{ name: 'menu' }">
         <button class="outline-none mobile-menu-button">
           <svg
             class="w-6 h-6 text-gray-500"
@@ -39,43 +39,39 @@
             stroke="currentColor"
           >
             <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+          </svg></button
+      ></router-link>
     </div>
-    <!-- Mobile menu -->
-    <ul
-      v-if="openMenu"
-      class="md:hidden flex flex-col h-screen mx-auto w-11/12"
-    >
-      <transition>
-        <div class="" @click="openMenu = !openMenu">
-          <router-link class="block py-4 border-b-4" :to="{ name: 'home' }">
-            Home.</router-link
-          >
-          <router-link class="block py-4 border-b-4" :to="{ name: 'work' }"
-            >Work.</router-link
-          >
-          <router-link class="block py-4 border-b-4" :to="{ name: 'about' }"
-            >About.</router-link
-          >
-          <router-link class="block py-4 border-b-4" :to="{ name: 'contact' }"
-            >Contact</router-link
-          >
-        </div>
-      </transition>
-    </ul>
   </header>
 </template>
 
 <script>
 import { ref } from "vue";
+import gsap from "gsap";
 export default {
   setup() {
     let mobile = ref(false);
     let openMenu = ref(false);
 
-    return { mobile, openMenu };
+    const beforeEnter = (el) => {
+      // el.style.transform = "translateY(-60px)";
+      // el.style.transform = "translateY(-70px)";
+      el.style.transform = "translateX(100px)";
+      el.style.opacity = 0;
+    };
+
+    const enter = (el, done) => {
+      gsap.to(el, {
+        duration: 1,
+        y: 0,
+        x: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+        onComplete: done,
+      });
+    };
+
+    return { mobile, openMenu, enter, beforeEnter };
   },
 };
 </script>

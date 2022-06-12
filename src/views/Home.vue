@@ -7,125 +7,148 @@
     <img
       v-if="sunny"
       class="w-8 md:w-8 lg:w-10"
-      src="src/assets/sunny.png"
+      src="/src/assets/sunny.png"
       width="40"
       alt="Sun icon"
     />
+
     <img
       v-else
       class="w-8 md:w-8 lg:w-10"
-      src="src/assets/snowflake.png"
+      src="/src/assets/snowflake.png"
       width="40"
       alt="Snow icon"
     />
   </div>
 
   <!-- Container -->
-  <div class="container flex justify-between items-start mx-auto w-11/12">
+  <div
+    class="container md:flex md:justify-between flex justify-between items-start mx-auto w-11/12"
+  >
     <!-- Left -->
-    <div class="w-11/12 md:space-y-10 space-y-5">
-      <h3 class="w-fit 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm">
-        Hello,
-      </h3>
-      <h1
-        class="3xl:text-8xl 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-bold leading-tight"
-      >
-        I am Gary Tsai <br />
-        A Self-taught <br />Developer.
-      </h1>
+    <div class="w-11/12 md:space-y-10 space-y-1.5">
+      <transition appear @before-enter="beforeEnter" @enter="enter">
+        <h3
+          class="w-fit 3xl:text-3xl 2xl:text-xl lg:text-xl md:text-md text-sm"
+        >
+          Hello,
+        </h3>
+      </transition>
+      <transition appear @before-enter="beforeEnter" @enter="enter">
+        <h1
+          class="3xl:text-8xl 2xl:text-7xl xl:text-6xl lg:text-4xl md:text-3xl sm:text-3xl text-xl font-bold leading-tight"
+        >
+          I am Gary Tsai, <br />
+          A Self-taught <br />Developer.
+        </h1>
+      </transition>
       <!-- Icons -->
-      <div
-        class="grid grid-cols-3 lg:grid-cols-6 md:grid-cols-3 mt-5 gap-5 w-fit md:py-3 md:px-5 py-1 px-2 rounded-lg bg-snow1"
-      >
+      <transition appear @before-enter="beforeEnter" @enter="enter">
         <div
-          @click="handleHtml = !handleHtml"
-          class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
+          class="grid grid-cols-3 lg:grid-cols-5 md:grid-cols-3 gap-5 w-fit md:py-3 md:px-5 py-1 px-2 rounded-lg bg-snow1"
         >
-          <img
-            v-if="!handleHtml"
-            src="src/assets/html.png"
-            alt="HTML icon"
-            title="HTML"
-          />
-          <img v-else src="src/assets/html.gif" alt="HTML icon" title="HTML" />
-        </div>
+          <div
+            @click="handleHtml = !handleHtml"
+            class="w-6 h-6 md:w-10 md:h-10 lg:w-20 lg:h-20"
+          >
+            <img
+              v-if="!handleHtml"
+              src="/src/assets/html.png"
+              alt="HTML icon"
+              title="HTML"
+            />
+            <img
+              v-else
+              src="/src/assets/html.gif"
+              alt="HTML icon"
+              title="HTML"
+            />
+          </div>
 
-        <div
-          @click="handleCss = !handleCss"
-          class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
-        >
-          <img
-            v-if="handleCss"
-            src="src/assets/css.png"
-            alt="CSS icon"
-            title="CSS"
-          />
-          <img
-            v-else
-            src="src/assets/css.png"
-            alt="CSS icon"
-            class="animate-pulse"
-            title="CSS"
-          />
-        </div>
+          <div
+            @click="handleCss = !handleCss"
+            class="w-6 h-6 md:w-10 md:h-10 lg:w-20 lg:h-20"
+          >
+            <img
+              v-if="handleCss"
+              src="/src/assets/css.png"
+              alt="CSS icon"
+              title="CSS"
+            />
+            <img
+              v-else
+              src="/src/assets/css.png"
+              alt="CSS icon"
+              class="animate-pulse"
+              title="CSS"
+            />
+          </div>
 
-        <div
-          @click="handleJs = !handleJs"
-          class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
-        >
-          <img
-            v-if="handleJs"
-            src="src/assets/js.png"
-            alt="Javascript icon"
-            title="Javascript"
-          />
-          <img
-            v-else
-            src="src/assets/js.gif"
-            alt="Javascript icon"
-            title="Javascript"
-          />
-        </div>
+          <div
+            @click="handleJs = !handleJs"
+            class="w-6 h-6 md:w-10 md:h-10 lg:w-20 lg:h-20"
+          >
+            <img
+              v-if="handleJs"
+              src="/src/assets/js.png"
+              alt="Javascript icon"
+              title="Javascript"
+            />
+            <img
+              v-else
+              src="/src/assets/js.gif"
+              alt="Javascript icon"
+              title="Javascript"
+            />
+          </div>
 
-        <div
-          @click="handleRn = !handleRn"
-          class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20"
-        >
-          <img
-            v-if="handleRn"
-            src="src/assets/react-native.png"
-            alt="React Native icon"
-            title="React Native"
-          />
-          <img
-            v-else
-            src="src/assets/react-native.gif"
-            alt="React Native icon"
-            title="React Native"
-          />
-        </div>
+          <div
+            @click="handleRn = !handleRn"
+            class="w-6 h-6 md:w-10 md:h-10 lg:w-20 lg:h-20"
+          >
+            <img
+              v-if="handleRn"
+              src="/src/assets/react-native.png"
+              alt="React Native icon"
+              title="React Native"
+            />
+            <img
+              v-else
+              src="/src/assets/react-native.gif"
+              alt="React Native icon"
+              title="React Native"
+            />
+          </div>
 
-        <div class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20">
-          <img src="src/assets/vue.png" alt="Vue icon" title="Vue icon" />
+          <div
+            @click="handleVue = !handleVue"
+            class="w-6 h-6 md:w-10 md:h-10 lg:w-20 lg:h-20"
+          >
+            <img
+              v-if="!handleVue"
+              src="/src/assets/vue.png"
+              alt="Vue icon"
+              title="Vue icon"
+              class="animate-spin"
+            />
+            <img v-else src="/src/assets/vue.png" alt="Vue icon" title="Vue" />
+          </div>
         </div>
-
-        <div class="w-4 h-4 md:w-10 md:h-10 lg:w-20 lg:h-20">
-          <img src="src/assets/vue.png" alt="Vue icon" title="Vue icon" />
-        </div>
-      </div>
+      </transition>
     </div>
 
     <!-- Right -->
     <div class="w-8/12 flex justify-end">
       <img
-        class="3xl:h-[800px] 2xl:h-[650px] xl:h-[550px] lg:h-[550px] md:h-[450px] sm:h-[350px]"
-        src="src/assets/profile.png"
+        class="3xl:h-[800px] 2xl:h-[650px] xl:h-[550px] lg:h-[550px] md:h-[450px] sm:h-[3 50px]"
+        src="/src/assets/profile.png"
         alt="user image"
       />
     </div>
   </div>
 
   <!-- Snowy -->
+
   <div
     v-if="!sunny"
     class="snowflakes md:text-2xl lg:text-4xl"
@@ -144,8 +167,7 @@
   </div>
 
   <!-- Wavy -->
-
-  <div class="absolute inset-x-0 bottom-0 md:none">
+  <div class="hidden md:block">
     <div class="custom-shape-divider-bottom-1653339622">
       <svg
         data-name="Layer 1"
@@ -163,6 +185,7 @@
 </template>
 
 <script>
+import gsap from "gsap";
 import { ref } from "vue";
 export default {
   setup() {
@@ -173,7 +196,33 @@ export default {
     let handleRn = ref("false");
     let handleVue = ref("false");
 
-    return { sunny, handleHtml, handleCss, handleJs, handleRn, handleVue };
+    const beforeEnter = (el) => {
+      // el.style.transform = "translateY(-60px)";
+      // el.style.transform = "translateY(-70px)";
+      el.style.transform = "translateY(20px)";
+      el.style.opacity = 0;
+    };
+
+    const enter = (el, done) => {
+      gsap.to(el, {
+        duration: 1.8,
+        y: 0,
+        opacity: 1,
+        ease: "power3.inOut",
+        onComplete: done,
+      });
+    };
+
+    return {
+      sunny,
+      handleHtml,
+      handleCss,
+      handleJs,
+      handleRn,
+      handleVue,
+      beforeEnter,
+      enter,
+    };
   },
 };
 </script>

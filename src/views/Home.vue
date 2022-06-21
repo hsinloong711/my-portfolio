@@ -199,14 +199,15 @@ export default {
     const beforeEnter = (el) => {
       // el.style.transform = "translateY(-60px)";
       // el.style.transform = "translateY(-70px)";
-      el.style.transform = "translateY(20px)";
+      el.style.transform = "translateX(-100px)";
       el.style.opacity = 0;
     };
 
     const enter = (el, done) => {
       gsap.to(el, {
         duration: 1.8,
-        y: 0,
+        // y: 0,
+        x: 0,
         opacity: 1,
         ease: "power3.inOut",
         onComplete: done,

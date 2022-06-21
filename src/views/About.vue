@@ -37,7 +37,7 @@
             <br /><br />
             I officially started my full-time programming journey on November
             2021 by joining a self-taught programme from Sigma School, where I
-            learnt more about modern programming including frameworks like Vue,
+            learn more about modern programming including frameworks like Vue,
             React Native.
             <br />
             <br />

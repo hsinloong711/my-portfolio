@@ -8,7 +8,7 @@
         class="md:hidden flex flex-col mx-auto w-12/12 md:overflow-auto lg:overflow-auto"
       >
         <!-- <div class="" @click="openMenu = !openMenu"> -->
-        <router-link class="flex pt-2 border-b-4 py-4" :to="{ name: 'home' }"
+        <router-link class="flex border-b-4 py-3" :to="{ name: 'home' }"
           ><div class="w-fit lg:max-w-xl text-base flex items-center block">
             <div class="w-5 h-5">
               <img src="/src/assets/home.png" alt="Home icon" />
@@ -18,7 +18,7 @@
         </router-link>
 
         <!-- Work -->
-        <router-link class="flex pt-2 border-b-4 py-4" :to="{ name: 'work' }"
+        <router-link class="flex border-b-4 py-3" :to="{ name: 'work' }"
           ><div class="w-fit lg:max-w-xl text-base flex items-center block">
             <div class="w-5 h-5">
               <img src="/src/assets/work.png" alt="Work icon" />
@@ -28,7 +28,7 @@
         </router-link>
 
         <!-- About -->
-        <router-link class="flex pt-2 border-b-4 py-4" :to="{ name: 'about' }"
+        <router-link class="flex border-b-4 py-3" :to="{ name: 'about' }"
           ><div class="w-fit lg:max-w-xl text-base flex items-center block">
             <div class="w-5 h-5">
               <img src="/src/assets/person.png" alt="Person icon" />
@@ -38,7 +38,7 @@
         </router-link>
 
         <!-- Contact -->
-        <router-link class="flex pt-2 border-b-4 py-4" :to="{ name: 'contact' }"
+        <router-link class="flex border-b-4 py-4" :to="{ name: 'contact' }"
           ><div class="w-fit lg:max-w-xl text-base flex items-center block">
             <div class="w-5 h-5">
               <img src="/src/assets/phone.png" alt="Phone icon" />
